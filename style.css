@@ -1,0 +1,17 @@
+h1 {
+    color : rgb(8, 67, 8)
+}
+
+img {
+    height: 92px;
+    width: 272px;
+}
+
+a {
+    text-decoration-line: none;
+    color: #000000DE;
+    font-size: 18px;
+    font-family: arial, sans-serif;
+}
+
+
