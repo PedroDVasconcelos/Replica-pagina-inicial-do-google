@@ -3,15 +3,32 @@ h1 {
 }
 
 img {
-    height: 92px;
-    width: 272px;
+   height: 94px;
+   width: 272px;
 }
 
 a {
     text-decoration-line: none;
     color: #000000DE;
-    font-size: 18px;
+    font-size: 13px;
     font-family: arial, sans-serif;
+    
 }
 
+.icon-products {
+    width: 24px;
+    fill: #3c3c3c;
+    
+}
+
+.btn-enter {
+    font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 27px;
+    font-weight: 700;
+    border-radius: 4px;
+    
+    
+}
 
