@@ -49,7 +49,40 @@ footer {
 }
 
 .box-rodape--borda {
-    border-bottom: 1px solid #444746;
+    border-bottom: 1px solid #d8d8d8;
+}
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+    gap: 15px;
+}
+.icone-produtos-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+}
+.primeiras-ancoras-rodape{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+.segundas-ancoras-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+
+}
+.display-child-containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
  
 
