@@ -15,6 +15,21 @@ a {
     text-decoration-line: none;
     font-size: 14px;
 }
+
+a:hover{
+    text-decoration: underline;   
+}
+
+.elementos-cursor{
+    cursor: pointer;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
 header {
     display: flex;
     flex-wrap: nowrap;
@@ -23,12 +38,35 @@ header {
     padding: 15px;
     gap: 15px;
 }
-.icone-produtos-svg {
+.icone-produtos-svg{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 48px;
-    width: 48px;
+    width: 48px; 
+    position: relative;
+}
+.icone-produtos-svg::after{
+    display: none;
+    content: "Google Apps";
+    background-color: #4f5355;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    width: max-content;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 30px);
+}
+
+.icone-produtos-svg:hover::after{
+    display: block;
+}
+
+.icone-produtos-svg:hover{
+    background-color:#f0f0f0;
+    border-radius: 100px;
 }
 
 .ancoras-cabecalho {
@@ -49,6 +87,13 @@ header {
     border-radius: 4px;   
     cursor: pointer;
 }
+.btn-enter:hover{
+    background-color: #1b66c9;
+    box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
+    0 1px 2px 0 rgba(60, 64, 67, 0.3);
+    text-decoration: none;
+    border-color: transparent;
+}
 
 /*codigos do área principal*/
 main {
@@ -56,13 +101,15 @@ main {
     align-items: center;
     flex-direction: column;
     gap: 29px;
+    height: 100vh;
+    justify-content: center;
 }
-
 
 .logo-google {
     height: 94px;
     width: 272px;
 }
+
 
 .barra-pesquisa{
     display: flex;
@@ -75,7 +122,12 @@ main {
     gap: 15px;
     height: 15px;
     width: 581px;
-    
+}
+
+.barra-pesquisa:hover,
+.barra-pesquisa:focus-within{
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: transparent;
 }
 
 .primeiros-elementos-caixadepesquisa{
@@ -84,17 +136,85 @@ main {
     gap: 15px;
 }
 
-.caixa-lupa {
+.caixa-lupa-div{
     height: 20px;
     fill: rgb(154, 160, 166);
-    padding-top: 11.5px;
-    padding-bottom: 11.5px;
+
 }
+
 .caixa-input{
     width: 425px;
     border: none
-
+    
 }
+.caixa-input:hover,
+.caixa-input:focus-within{
+    outline: none;
+}
+.caixa-teclado-div{
+    position: relative;
+}
+
+.caixa-teclado-div::after{
+    display: none;
+    content: "Ferramentas de introdução";
+    background-color: #4f5355;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    width: max-content;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 30px);
+}
+
+.caixa-teclado-div:hover::after{
+    display:block;
+}
+
+.caixa-microfone-div{
+    position: relative;
+}
+.caixa-microfone-div::after{
+    display: none;
+    content: "Pesquisa de voz";
+    background-color: #4f5355;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    width: max-content;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 30px);
+}
+
+.caixa-microfone-div:hover::after{
+    display: block;
+}
+
+.caixa-googlelens-div{
+    position: relative;
+}
+.caixa-googlelens-div::after{
+    display: none;
+    content: "Pesquisa por imagem";
+    background-color: #4f5355;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    width: max-content;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 30px);
+}
+
+.caixa-googlelens-div:hover::after{
+    display: block;
+}
+
 
 .segunda-imagens-caixadepesquisa{
     height: 24px;
@@ -109,8 +229,7 @@ main {
     gap: 16px;
     display: flex;
     align-items: center;
-    flex-direction: row;
-    
+    flex-direction: row; 
 }
 .botao{
     background-color: rgb(242, 242, 242);
@@ -118,9 +237,15 @@ main {
     padding: 10px 17px;
     font-weight: 400;
     border-radius: 4px;
-    border: none;
     cursor: pointer;
+    border: 1px solid transparent;
 }
+
+.botao:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dadce0;
+}
+
 .texto-disponiblizado{
     display: flex;
     align-items: center;
