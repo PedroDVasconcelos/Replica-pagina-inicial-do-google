@@ -1,3 +1,4 @@
+/*codigos gerais*/
 * {
     padding : 0;
     margin : 0;
@@ -10,46 +11,9 @@ h1 {
     color : rgb(8, 67, 8)
 }
 
-img {
-   height: 94px;
-   width: 272px;
-}
-
 a {
     text-decoration-line: none;
     font-size: 14px;
-      
-}
-.ancoras-cabecalho {
-    color: black;
-}
-
-.icon-products {
-    width: 24px;
-    fill: #3c3c3c;
-    
-}
-
-.btn-enter {
-    font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
-    background-color: #1a73e8;
-    color: white;
-    padding: 10px 27px;
-    font-weight: 700;
-    border-radius: 4px;
-    
-}
-
-footer {
-    background-color: #f2f2f2;
-}
-
-.box-rodape {
-    padding: 15px 30px;
-}
-
-.box-rodape--borda {
-    border-bottom: 1px solid #d8d8d8;
 }
 header {
     display: flex;
@@ -66,6 +30,123 @@ header {
     height: 48px;
     width: 48px;
 }
+
+.ancoras-cabecalho {
+    color: black;
+}
+
+.icon-products {
+    width: 24px;
+    fill: #3c3c3c;  
+}
+
+.btn-enter {
+    font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 27px;
+    font-weight: 700;
+    border-radius: 4px;   
+    cursor: pointer;
+}
+
+/*codigos do área principal*/
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 29px;
+}
+
+
+.logo-google {
+    height: 94px;
+    width: 272px;
+}
+
+.barra-pesquisa{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid #def1e5;
+    padding: 15px;
+    border-radius: 70px;
+    gap: 15px;
+    height: 15px;
+    width: 581px;
+    
+}
+
+.primeiros-elementos-caixadepesquisa{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.caixa-lupa {
+    height: 20px;
+    fill: rgb(154, 160, 166);
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+}
+.caixa-input{
+    width: 425px;
+    border: none
+
+}
+
+.segunda-imagens-caixadepesquisa{
+    height: 24px;
+    fill: rgb(191, 191, 191);
+    gap: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.botoes {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.botao{
+    background-color: rgb(242, 242, 242);
+    color: black;
+    padding: 10px 17px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.texto-disponiblizado{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.idioma{
+    font-size: 13px;
+    color: #4D5156;
+    padding-left: 5px;
+}
+
+/*codigos do rodapé*/
+
+footer {
+    background-color: #f2f2f2;
+}
+
+.box-rodape {
+    padding: 15px 30px;
+}
+
+.box-rodape--borda {
+    border-bottom: 1px solid #d8d8d8;
+}
+
 .primeiras-ancoras-rodape{
     display: flex;
     align-items: center;
